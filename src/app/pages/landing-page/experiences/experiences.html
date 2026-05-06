@@ -1,0 +1,28 @@
+<swiper-container
+  slides-per-view="1"
+  navigation="true"
+  pagination="true"
+  loop="true"
+  space-between="16"
+  speed="600"
+>
+  <swiper-slide *ngFor="let item of experiences">
+    <div class="experience-card">
+      <img
+        [src]="item.image"
+        [alt]="item.title"
+        loading="lazy"
+        class="experience-card__image"
+      />
+
+      <div class="experience-card__content">
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.status }}</h4>
+        <h4>{{ item.date }}</h4>
+        <p>{{ item.technologies }}</p>
+
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  </swiper-slide>
+</swiper-container>
