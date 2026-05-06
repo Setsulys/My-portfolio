@@ -1,0 +1,12 @@
+<swiper-container
+  slides-per-view="1"
+  navigation="true"
+  pagination="true"
+  loop="true"
+  space-between="16"
+  speed="600"
+>
+  <swiper-slide *ngFor="let image of images">
+    <img [src]="image" alt="Image du carousel" loading="lazy" />
+  </swiper-slide>
+</swiper-container>
