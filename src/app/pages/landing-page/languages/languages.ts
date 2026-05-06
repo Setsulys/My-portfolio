@@ -2,15 +2,15 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-language',
+  selector: 'app-languages',
   standalone: true,
   imports: [CommonModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './language.html',
-  styleUrls: ['./language.scss']
+  templateUrl: './languages.html',
+  styleUrls: ['./languages.scss']
 })
 
-export class Language {
+export class Languages {
   images = [
     'assets/images/FR-flag.png',
     'assets/images/GB-flag.png',
