@@ -12,18 +12,14 @@ import { CommonModule } from '@angular/common';
 
 export class Experiences {
   experiences = [
-    {
+     {
       image: 'assets/images/SG.png',
       technologies:['Kotlin', 'Angular', 'RabbitMq', 'Springboot', 'PostgreSql', 'Jira', 'Github', 'Liquibase', 'Scrum', 'Sonar', 'Rest API'],
       title: 'Société Générale',
       date:'April 2025 - September 2025',
       status:'Développeur Fullstack',
-      description: `Conception, développement et mise en production d'un service centralisant un traitement
-                    précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication
-                    de code et les risques d'incohérences des données.
-
-                    Participation à la mise en place de tests automatisés et à la revue de code via pull requests,
-                    améliorant la qualité et la maintenabilité du service.`
+      description: ['Conception, développement et mise en production d\'un service centralisant un traitement précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication de code et les risques d\'incohérences des données.',
+                    'Participation à la mise en place de tests automatisés et à la revue de code via pull requests, améliorant la qualité et la maintenabilité du service.']
     },
     {
       image: 'assets/images/NI.png',
@@ -31,12 +27,8 @@ export class Experiences {
       technologies:['Wordpress', 'Css', 'Php'],
       date:'May 2023 - August 2023',
       status:'Développeur Front',
-      description: `Conception, développement et mise en production d'un service centralisant un traitement
-          précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication
-          de code et les risques d'incohérences des données.
-
-          Participation à la mise en place de tests automatisés et à la revue de code via pull requests,
-          améliorant la qualité et la maintenabilité du service.`
+      description: ['Création d\'un site vitrine WordPress (intégration HTML/CSS, personnalisation PHP) pour les clients de l\'entreprise',
+                    'Mise en place de la collecte de cookies pour accélérer la réponse commerciale']
     },
     {
       image: 'assets/images/Euphor.png',
@@ -44,12 +36,8 @@ export class Experiences {
       technologies:['Wordpress'],
       date:'June 2022 - August 2022',
       status:'Développeur Front',
-      description: `Conception, développement et mise en production d'un service centralisant un traitement
-                précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication
-                de code et les risques d'incohérences des données.
-
-                Participation à la mise en place de tests automatisés et à la revue de code via pull requests,
-                améliorant la qualité et la maintenabilité du service.`
+      description: ['Audit de sites vitrine et des tendances de design actuelles pour préparer une refonte',
+                    'Refonte complète du site vitrine de l\'entreprise sous WordPress']
     },
     {
       image: 'assets/images/Higashidate.png',
@@ -57,8 +45,8 @@ export class Experiences {
       technologies:[],
       date:'June 2019 - September 2019',
       status:'Employé Polyvalent en établissement hotelier',
-      description: `Préparer les tables et servir les plats dans le restaurant de l'hôtel
-                    Entretenir les locaux et les chambres`
+      description: ['Préparer les tables et servir les plats dans le restaurant de l\'hôtel',
+                    'Entretenir les locaux et les chambres']
       }
   ];
 }

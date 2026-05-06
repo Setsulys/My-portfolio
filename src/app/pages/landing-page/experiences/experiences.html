@@ -19,9 +19,10 @@
         <h3>{{ item.title }}</h3>
         <h4>{{ item.status }}</h4>
         <h4>{{ item.date }}</h4>
-        <p>{{ item.technologies }}</p>
-
-        <p>{{ item.description }}</p>
+        <p>{{ item.technologies.join(' | ') }}</p>
+        <ul *ngFor="let ditem of item.description" >
+          <li>{{ditem}}</li>
+        </ul>
       </div>
     </div>
   </swiper-slide>
