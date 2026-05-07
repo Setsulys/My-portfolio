@@ -1,9 +1,14 @@
 <div class="timeline">
   <div class="timeline-item" *ngFor="let formation of formations">
-    <div class="timeline-dot"></div>
     <div class="timeline-line"></div>
-
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
+      <img
+        [src]="formation.image"
+        [alt]="formation.school"
+        loading="lazy"
+        class="formation-image"
+      />
       <h3>{{ formation.school }}</h3>
       <span class="diploma">{{ formation.diploma }}</span>
       <p class="date">{{ formation.date }}</p>

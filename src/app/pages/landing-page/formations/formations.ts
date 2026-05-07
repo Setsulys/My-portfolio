@@ -15,7 +15,7 @@ export class Formations {
      {
       image: 'assets/images/IGM.png',
       type:'University',
-      diploma:'Master Degree',
+      diploma:'Master Degree (Software and Data Engineering)',
       school: 'Université Gustave Eiffel - Institut Gaspard Monge',
       location:'Champs Sur Marne - France',
       date: 'September 2018 - November 2025',
@@ -33,7 +33,7 @@ export class Formations {
      {
       image: 'assets/images/GF.png',
       type:'High school',
-      diploma:'A level',
+      diploma:'A level (Science)',
       school: 'Gabriel Fauré High School',
       location:'Paris - France',
       date: 'September 2015 - July 2017',

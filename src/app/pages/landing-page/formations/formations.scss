@@ -17,7 +17,7 @@
 .timeline-dot {
   position: absolute;
   left: -2px;
-  top: 4px;
+  top: 50px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -29,7 +29,6 @@
 .timeline-line {
   position: absolute;
   left: 11px;
-  top: 32px;
   width: 3px;
   height: 100%;
   background: #2563eb;
@@ -60,3 +59,14 @@
   margin: 0 0 0.5rem;
   font-weight: 500;
 }
+
+ .formation-image {
+   width: auto;
+   height: auto;
+   max-width:75%;
+   max-height:100px;
+   object-fit: cover;
+   display: block;
+   border-radius:10px;
+   margin-bottom:10px;
+ }
