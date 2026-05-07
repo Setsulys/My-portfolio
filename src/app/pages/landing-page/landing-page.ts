@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Languages } from './languages/languages';
 import { Experiences } from './experiences/experiences'
+import { Formations } from './formations/formations'
 
 @Component({
   selector: 'app-landing-page',
-  imports: [Languages, Experiences],
+  imports: [Experiences, Formations],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
 })
