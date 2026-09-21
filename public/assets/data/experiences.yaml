@@ -1,6 +1,7 @@
 - title: "Société Générale"
   status: "Développeur Fullstack"
-  date: "April 2025 - September 2025"
+  location: "Nanterre - France"
+  date: "Avril 2025 - Septembre 2025"
   image: "assets/images/SG.png"
   technologies: ['Kotlin', 'Angular', 'RabbitMq', 'Springboot', 'PostgreSql', 'Jira', 'Github', 'Liquibase', 'Scrum', 'Sonar', 'Rest API']
   description:
@@ -9,7 +10,8 @@
 
 - title: "Amoa point 12/ Net Inspiration"
   status: "Développeur Front"
-  date: "May 2023 - August 2023"
+  location: "Noisy-le-Grand - France"
+  date: "Mai 2023 - Août 2023"
   image: "assets/images/NI.png"
   technologies: ['Wordpress', 'Css', 'Php']
   description:
@@ -18,7 +20,8 @@
 
 - title: "NRJBI/Euphor"
   status: "Développeur Front"
-  date: "June 2022 - August 2022"
+  location: "Paris - France"
+  date: "Juin 2022 - Août 2022"
   image: "assets/images/Euphor.png"
   technologies: ['Wordpress','Css']
   description:
@@ -27,7 +30,8 @@
 
 - title: "Higashidate Hotel"
   status: "Employé Polyvalent en établissement hotelier"
-  date: "June 2019 - September 2019"
+  location: "Shiga kogen - Japon"
+  date: "Juin 2019 - Septembre 2019"
   image: "assets/images/Higashidate.png"
   technologies: []
   description:
@@ -36,10 +40,11 @@
 
 - title: "Meng Fat"
   status: "Employé Polyvalent en Restauration"
+  location: "Paris - France"
   date: "2013 - 2019"
   image: "assets/images/MF.png"
   technologies: []
   description:
     - "Service en salle"
-    - "Nettoyage de la vaisselle"
+    - "Encaissement"
     - "Préparation en vue du lendemain"
