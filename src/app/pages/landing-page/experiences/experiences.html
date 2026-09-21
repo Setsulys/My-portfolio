@@ -1,3 +1,4 @@
+@if (experiences$ | async; as experiences) {
 <swiper-container
   slides-per-view="1"
   navigation="true"
@@ -6,12 +7,12 @@
   space-between="16"
   speed="600"
 >
-  <swiper-slide *ngFor="let item of experiences">
+  @for (item of experiences; track item.title) {
+  <swiper-slide>
     <div class="experience-card">
       <img
         [src]="item.image"
         [alt]="item.title"
-        loading="lazy"
         class="experience-card__image"
       />
 
@@ -19,12 +20,19 @@
         <h3>{{ item.title }}</h3>
         <h4>{{ item.status }}</h4>
         <h4>{{ item.date }}</h4>
-        <p>{{ item.technologies.join(' | ') }}</p>
-        <ul *ngFor="let ditem of item.description" >
-          <li>{{ditem}}</li>
+
+        <p class="tech-list">{{ item.technologies.join(' | ') }}</p>
+
+        <ul class="description-list">
+          @for (ditem of item.description; track ditem) {
+          <li>{{ ditem }}</li>
+          }
         </ul>
-        <br>
       </div>
     </div>
   </swiper-slide>
+  }
 </swiper-container>
+} @else {
+<div class="loading-slider">Chargement de mon parcours...</div>
+}
