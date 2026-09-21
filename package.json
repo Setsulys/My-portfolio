@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.0.0",
   "scripts": {
+    "dev": "ng serve",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -38,5 +39,11 @@
     "prettier": "^3.8.1",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
+  },
+  "allowScripts": {
+    "lmdb@3.5.1": true,
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.1": true,
+    "msgpackr-extract@3.0.4": true
   }
 }
