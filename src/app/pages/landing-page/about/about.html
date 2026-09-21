@@ -1,4 +1,5 @@
-@if (profile) {
+<!-- On ajoute '| async as profile' ici pour s'abonner proprement au flux -->
+@if (profile$ | async; as profile) {
 <main class="about-container">
   <section class="hero-section">
     <h1>Salut, moi c'est <span>{{ profile.name }}</span> ! 👨‍💻</h1>
