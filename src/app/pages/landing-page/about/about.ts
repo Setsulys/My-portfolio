@@ -21,11 +21,8 @@ interface DeveloperProfile {
 })
 
 export class About implements OnInit {
-  // Correction ici : pas de '!' quand on initialise directement avec inject()
   private http = inject(HttpClient);
-
   profile?: DeveloperProfile;
-
   ngOnInit(): void {
     this.http.get('assets/data/profile.yaml', { responseType: 'text' })
       .subscribe({
