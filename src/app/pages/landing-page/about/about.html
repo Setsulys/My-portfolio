@@ -1,1 +1,27 @@
-<p>about works!</p>
+<!-- On ajoute '| async as profile' ici pour s'abonner proprement au flux -->
+@if (profile$ | async; as profile) {
+<main class="about-container">
+  <section class="hero-section">
+    <h1>Salut, moi c'est <span>{{ profile.name }}</span> ! 👨‍💻</h1>
+    <p class="lead">
+      Je suis <strong>{{ profile.title }}</strong> basé à {{ profile.location }}.
+      Concepteur d'applications web modernes depuis plus de {{ profile.experienceYears }} ans.
+    </p>
+  </section>
+
+  <section class="bio-section">
+    <h3>Ma stack de prédilection :</h3>
+    <ul class="skills-list">
+      @for (skill of profile.skills; track skill) {
+      <li><code>{{ skill }}</code></li>
+      }
+    </ul>
+
+    <p>
+      Quand je ne suis pas en train de push du code, j'aime bien {{ profile.hobbies.join(', ') }}.
+    </p>
+  </section>
+</main>
+} @else {
+<div class="loading">Chargement du profil...</div>
+}
