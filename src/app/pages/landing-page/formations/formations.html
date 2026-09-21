@@ -19,8 +19,8 @@
         - {{ item.diploma }}
         }
       </span>
-      <p class="date">{{ item.date }}</p>
       <p>{{ item.location }}</p>
+      <p class="date">{{ item.date }}</p>
       <ul class="description-list">
         @for (ditem of item.description; track ditem) {
         <li>{{ ditem }}</li>
