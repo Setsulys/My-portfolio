@@ -1,0 +1,15 @@
+name: "Steven"
+title: "Développeur Fullstack Spécialisé en Java/Kotlin et Angular"
+location: "Paris, France"
+experienceYears: 1
+skills:
+  - "Java"
+  - "Kotlin"
+  - "Angular"
+  - "Node.js"
+  - "RxJS"
+hobbies:
+  - "Conduire dans des simulateurs de course"
+  - "Piloter des avions de lignes sur simulateur"
+  - "jouer aux échecs"
+  - "le café de spécialité"
