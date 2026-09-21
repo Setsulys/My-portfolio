@@ -8,6 +8,7 @@ import { load } from 'js-yaml';
 export interface ExperienceItem {
   title: string;
   status: string;
+  location:string;
   date: string;
   image: string;
   technologies: string[];
