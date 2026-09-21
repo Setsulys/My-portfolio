@@ -1,0 +1,70 @@
+softskills:
+  - "Esprit d'équipe"
+  - "Adaptabilité"
+  - "Persévérant"
+
+hardskills:
+  - back-end:
+      - framework:
+          - "Spring framework"
+      - languages:
+          - "Java"
+          - "Kotlin"
+          - "Python"
+      - api:
+          - "REST API"
+          - "Springwolf"
+      - system:
+          - "C"
+          - "C++"
+          - "NASM"
+      - web:
+          - "PHP"
+
+  - bigdata:
+      - cloud:
+          - "Databricks"
+      - treatment:
+          - "Scala"
+          - "pyspark"
+          - "pandas"
+      - learning:
+          - "Scikit-learn"
+          - "Tensor-flow"
+      - messaging:
+          - "RabbitMq"
+          - "Appache Kafka"
+
+
+  - devops:
+      - versionning:
+          - "Git"
+          - "Github"
+          - "Gitlab"
+      - cicd:
+          - "Github action"
+          - "Jenkins"
+      - quality:
+          - "SonarQube"
+
+  - test:
+      - unity:
+          - "junit"
+          - "mockk"
+      - acceptation:
+          - "cucumber"
+
+  - bdd-monitoring:
+      - data:
+          - "PostgreSql"
+          - "MongoDB"
+          - "NoSql"
+          - "Liquibase"
+      - monitoring:
+          - "ElasticSeach"
+          - "Kibana"
+
+  - font-end:
+      - "Angular"
+      - "Typescript"
+      - "Javascript"

@@ -1,1 +1,25 @@
-<p>contact works!</p>
+<h2 class="text-center">Contact and links</h2>
+
+@if( contacts$ | async; as contact ) {
+<div class="container pb-5 mb-5">
+  <div class="row">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+      <a [href]="contact.linkedin.link" target="_blank">
+        <i [class]="contact.linkedin.logo"> </i>
+      </a>
+  </div>
+    <div class="col-4 d-flex justify-content-center align-items-center">
+      <a [href]="'mailto:'+'contact.mail.link'" onclick="window.location.href='np.html'">
+        <i [class]="contact.mail.logo" style="color:red"></i>
+      </a>
+  </div>
+    <div class="col-4 d-flex justify-content-center align-items-center">
+      <a [href]="contact.github.link" target="_blank">
+        <i [class]="contact.github.logo" style="color:black"></i>
+      </a>
+    </div>
+  </div>
+</div>
+} @else {
+<div>Chargement des liens...</div>
+}
