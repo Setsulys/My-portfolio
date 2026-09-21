@@ -1,19 +1,35 @@
+<h2 class="text-center"> Formations </h2>
+@if (formations$ | async; as formations) {
 <div class="timeline">
-  <div class="timeline-item" *ngFor="let formation of formations">
+  @for(item of formations; track item.school){
+  <div class="timeline-item">
     <div class="timeline-line"></div>
     <div class="timeline-dot"></div>
     <div class="timeline-content">
       <img
-        [src]="formation.image"
-        [alt]="formation.school"
+        [src]="item.image"
+        [alt]="item.school"
         loading="lazy"
         class="formation-image"
       />
-      <h3>{{ formation.school }}</h3>
-      <span class="diploma">{{ formation.diploma }}</span>
-      <p class="date">{{ formation.date }}</p>
-      <p>{{ formation.location }}</p>
-      <p>{{ formation.description }}</p>
+      <h3>{{ item.school }}</h3>
+      <h5></h5>
+      <span class="diploma">{{item.type}}
+        @if(item.diploma){
+        - {{ item.diploma }}
+        }
+      </span>
+      <p class="date">{{ item.date }}</p>
+      <p>{{ item.location }}</p>
+      <ul class="description-list">
+        @for (ditem of item.description; track ditem) {
+        <li>{{ ditem }}</li>
+        }
+      </ul>
     </div>
   </div>
+  }
 </div>
+} @else {
+<div class="timeline">Chargement de mon parcours...</div>
+}

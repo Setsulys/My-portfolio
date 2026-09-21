@@ -1,11 +1,10 @@
-<!-- On ajoute '| async as profile' ici pour s'abonner proprement au flux -->
 @if (profile$ | async; as profile) {
 <main class="about-container">
   <section class="hero-section">
-    <h1>Salut, moi c'est <span>{{ profile.name }}</span> ! 👨‍💻</h1>
+    <h3>Salut, moi c'est <span>{{ profile.name }}</span> ! 👨‍💻</h3>
     <p class="lead">
       Je suis <strong>{{ profile.title }}</strong> basé à {{ profile.location }}.
-      Concepteur d'applications web modernes depuis plus de {{ profile.experienceYears }} ans.
+      Concepteur d'applications web modernes depuis plus de {{ profile.experienceYears }} @if(profile.experienceYears===1){an} @else{ ans}.
     </p>
   </section>
 

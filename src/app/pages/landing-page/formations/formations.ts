@@ -1,5 +1,19 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { load } from 'js-yaml';
+
+export interface FormationItem{
+  school: string;
+  type: string;
+  image: string;
+  location: string;
+  date: string;
+  diploma: string;
+  description: string[];
+}
 
 @Component({
   selector: 'app-formations',
@@ -11,34 +25,9 @@ import { CommonModule } from '@angular/common';
 })
 
 export class Formations {
-  formations = [
-     {
-      image: 'assets/images/IGM.png',
-      type:'University',
-      diploma:'Master Degree (Software and Data Engineering)',
-      school: 'Université Gustave Eiffel - Institut Gaspard Monge',
-      location:'Champs Sur Marne - France',
-      date: 'September 2018 - November 2025',
-      description: ['Conception, développement et mise en production d\'un service centralisant un traitement précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication de code et les risques d\'incohérences des données.',
-                    'Participation à la mise en place de tests automatisés et à la revue de code via pull requests, améliorant la qualité et la maintenabilité du service.']
-    },
-     {
-      image: 'assets/images/PV.png',
-      school: 'Paul Valery Perparatory Classes PCSI',
-      location:'Paris - France',
-      date:'September 2017 - July 2018',
-      description: ['Conception, développement et mise en production d\'un service centralisant un traitement précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication de code et les risques d\'incohérences des données.',
-                    'Participation à la mise en place de tests automatisés et à la revue de code via pull requests, améliorant la qualité et la maintenabilité du service.']
-    },
-     {
-      image: 'assets/images/GF.png',
-      type:'High school',
-      diploma:'A level (Science)',
-      school: 'Gabriel Fauré High School',
-      location:'Paris - France',
-      date: 'September 2015 - July 2017',
-      description: ['Conception, développement et mise en production d\'un service centralisant un traitement précédemment dupliqué dans une trentaine de services, permettant de réduire la duplication de code et les risques d\'incohérences des données.',
-                    'Participation à la mise en place de tests automatisés et à la revue de code via pull requests, améliorant la qualité et la maintenabilité du service.']
-    },
-  ];
+  private http = inject(HttpClient)
+  formations$: Observable<FormationItem[]>= this.http.get('assets/data/formations.yaml',{responseType:'text'})
+  .pipe(
+    map((rawText:string)=>load(rawText) as FormationItem[])
+    );
 }
