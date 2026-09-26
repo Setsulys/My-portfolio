@@ -5,29 +5,28 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { load } from 'js-yaml';
 
-export interface FormationItem{
-  school: string;
-  type: string;
-  image: string;
-  location: string;
+export interface ExperienceItem {
+  title: string;
+  status: string;
+  location:string;
   date: string;
-  diploma: string;
+  image: string;
+  technologies: string[];
   description: string[];
 }
-
 @Component({
-  selector: 'app-formations',
+  selector: 'app-experiences-component',
   standalone: true,
   imports: [CommonModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './formations.html',
-  styleUrls: ['./formations.scss']
+  templateUrl: './experiences-component.html',
+  styleUrls: ['./experiences-component.scss']
 })
 
-export class Formations {
+export class ExperiencesComponent {
   private http = inject(HttpClient)
-  formations$: Observable<FormationItem[]>= this.http.get('assets/data/formations.yaml',{responseType:'text'})
+  experiences$: Observable<ExperienceItem[]>= this.http.get('assets/data/experiences.yaml',{responseType:'text'})
   .pipe(
-    map((rawText:string)=>load(rawText) as FormationItem[])
+    map((rawText:string)=>load(rawText) as ExperienceItem[])
     );
 }

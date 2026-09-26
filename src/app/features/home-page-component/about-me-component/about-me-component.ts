@@ -15,12 +15,12 @@ interface DeveloperProfile {
 }
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about-me-component',
   imports: [CommonModule],
-  templateUrl: './about.html',
-  styleUrl: './about.scss',
+  templateUrl: './about-me-component.html',
+  styleUrl: './about-me-component.scss',
 })
-export class About {
+export class AboutMeComponent {
   private http = inject(HttpClient);
   profile$: Observable<DeveloperProfile> = this.http.get('assets/data/profile.yaml', { responseType: 'text' })
     .pipe(

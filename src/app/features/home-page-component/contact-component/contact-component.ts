@@ -17,12 +17,12 @@ export interface ContactItem{
   }
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-contact-component',
   imports: [CommonModule],
-  templateUrl: './contact.html',
-  styleUrl: './contact.scss',
+  templateUrl: './contact-component.html',
+  styleUrl: './contact-component.scss',
 })
-export class Contact {
+export class ContactComponent {
   private http = inject(HttpClient)
   contacts$: Observable<ContactItem>= this.http.get('assets/data/contact.yaml',{responseType:'text'})
   .pipe(
