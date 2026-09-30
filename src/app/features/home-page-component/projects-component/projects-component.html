@@ -1,1 +1,51 @@
-<p>projects works!</p>
+<h2 class="text-center"> Projets </h2>
+@if (projects$ | async; as projects) {
+<swiper-container
+  slides-per-view="1"
+  navigation="true"
+  pagination="true"
+  loop="false"
+  space-between="16"
+  speed="600"
+>
+  @for (item of (projects$ | async); track item.title) {
+  <swiper-slide>
+    <div class="rounded-5 bg-body-tertiary py-3 my-3 mx-5">
+      <img
+        [src]="item.image"
+        alt="bootstrap"
+        class="w-auto h-auto mw-100 mh-50 d-block mt-2 my-5 px-5"
+        style="max-height: 150px; object-fit: cover;"
+      />
+
+      <div class="mx-5">
+        <h3>{{ item.title }}
+          @if(isOver(item.status)){
+          <i class="bi bi-check-circle" style="color:green"></i>
+          }@else{
+          <i class="bi bi-clock-history" style="color:orange"></i>
+          }
+        </h3>
+        <br>
+        <h5>{{ item.date }}</h5>
+        <br>
+        <p class="tech-list">{{ item.technologies.join(' | ') }}</p>
+
+        <ul class="description-list">
+          @for (ditem of item.description; track ditem) {
+          <li>{{ ditem }}</li>
+          }
+        </ul>
+        @for (git of item.links; track git) {
+        <p class="tech-list">
+          <a [href]=git.url target="_blank"><i [class]=git.icon [style.color]=git.color></i> {{git.name}}</a>
+        </p>
+        }
+      </div>
+    </div>
+  </swiper-slide>
+  }
+</swiper-container>
+} @else {
+<div class="loading-slider">Chargement de mon parcours...</div>
+}

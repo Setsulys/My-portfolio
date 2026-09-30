@@ -12,7 +12,7 @@ export interface FormationItem{
   location: string;
   date: string;
   diploma: string;
-  description: string[];
+  description?: string[];
 }
 
 @Component({
@@ -28,6 +28,12 @@ export class FormationsComponent {
   private http = inject(HttpClient)
   formations$: Observable<FormationItem[]>= this.http.get('assets/data/formations.yaml',{responseType:'text'})
   .pipe(
-    map((rawText:string)=>load(rawText) as FormationItem[])
+    map((rawText:string)=> load(rawText) as any[]),
+    map((rawFormations: any[]) =>{
+      return rawFormations.map((formation: any) =>({
+              ...formation,
+              description: formation.description ?? []
+              })) as FormationItem[]
+      })
     );
 }

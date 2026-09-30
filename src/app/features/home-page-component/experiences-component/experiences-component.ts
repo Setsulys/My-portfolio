@@ -27,6 +27,13 @@ export class ExperiencesComponent {
   private http = inject(HttpClient)
   experiences$: Observable<ExperienceItem[]>= this.http.get('assets/data/experiences.yaml',{responseType:'text'})
   .pipe(
-    map((rawText:string)=>load(rawText) as ExperienceItem[])
+    map((rawText:string)=>load(rawText) as any[]),
+     map((rawExperience: any[]) => {
+       return rawExperience.map((experience:any) =>({
+            ...experience,
+            description: experience.description ?? [],
+            })) as ExperienceItem[]
+
+       })
     );
 }

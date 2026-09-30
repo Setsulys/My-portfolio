@@ -1,70 +1,70 @@
 softskills:
-  - "Esprit d'équipe"
-  - "Adaptabilité"
-  - "Persévérant"
+  - Esprit d'équipe
+  - Adaptabilité
+  - Persévérant
 
 hardskills:
   - back-end:
       - framework:
-          - "Spring framework"
+          - Spring framework
       - languages:
-          - "Java"
-          - "Kotlin"
-          - "Python"
+          - Java
+          - Kotlin
+          - Python
       - api:
-          - "REST API"
-          - "Springwolf"
+          - REST API
+          - Springwolf
       - system:
-          - "C"
-          - "C++"
-          - "NASM"
+          - C
+          - C++
+          - NASM
       - web:
-          - "PHP"
+          - PHP
 
   - bigdata:
       - cloud:
-          - "Databricks"
+          - Databricks
       - treatment:
-          - "Scala"
-          - "pyspark"
-          - "pandas"
+          - Scala
+          - pyspark
+          - pandas
       - learning:
-          - "Scikit-learn"
-          - "Tensor-flow"
+          - Scikit-learn
+          - Tensor-flow
       - messaging:
-          - "RabbitMq"
-          - "Appache Kafka"
+          - RabbitMq
+          - Appache Kafka
 
 
   - devops:
       - versionning:
-          - "Git"
-          - "Github"
-          - "Gitlab"
+          - Git
+          - Github
+          - Gitlab
       - cicd:
-          - "Github action"
-          - "Jenkins"
+          - Github action
+          - Jenkins
       - quality:
-          - "SonarQube"
+          - SonarQube
 
   - test:
       - unity:
-          - "junit"
-          - "mockk"
+          - junit
+          - mockk
       - acceptation:
-          - "cucumber"
+          - cucumber
 
   - bdd-monitoring:
       - data:
-          - "PostgreSql"
-          - "MongoDB"
-          - "NoSql"
-          - "Liquibase"
+          - PostgreSql
+          - MongoDB
+          - NoSql
+          - Liquibase
       - monitoring:
-          - "ElasticSeach"
-          - "Kibana"
+          - ElasticSeach
+          - Kibana
 
   - font-end:
-      - "Angular"
-      - "Typescript"
-      - "Javascript"
+      - Angular
+      - Typescript
+      - Javascript

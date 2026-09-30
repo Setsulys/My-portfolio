@@ -5,15 +5,10 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { load } from 'js-yaml';
 
-interface SocialNetwork{
+interface ContactItem{
   logo:string;
   link:string;
-  }
-
-export interface ContactItem{
-  github:SocialNetwork;
-  linkedin:SocialNetwork;
-  mail:SocialNetwork;
+  color:string;
   }
 
 @Component({
@@ -24,8 +19,8 @@ export interface ContactItem{
 })
 export class ContactComponent {
   private http = inject(HttpClient)
-  contacts$: Observable<ContactItem>= this.http.get('assets/data/contact.yaml',{responseType:'text'})
+  contacts$: Observable<ContactItem[]>= this.http.get('assets/data/contact.yaml',{responseType:'text'})
   .pipe(
-    map((rawText:string)=>load(rawText) as ContactItem)
+    map((rawText:string)=>load(rawText) as ContactItem[])
     );
   }
