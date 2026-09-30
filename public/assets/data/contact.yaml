@@ -1,9 +1,13 @@
-github:
-  logo: "bi bi-github"
-  link: "https://github.com/Setsulys"
-linkedin:
-  logo: "bi bi-linkedin"
-  link: "https://www.linkedin.com/in/steven-ly-ieng/"
-mail:
-  logo: "bi bi-envelope"
-  link: "steven.lyieng@gmail.com"
+- logo: bi bi-envelope
+  link: mailto:steven.lyieng@gmail.com
+  color: red
+
+- logo: bi bi-github
+  link: https://github.com/Setsulys
+  color: black
+
+- logo: bi bi-linkedin
+  link: https://www.linkedin.com/in/steven-ly-ieng/
+  color:
+
+

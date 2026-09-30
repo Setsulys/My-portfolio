@@ -1,15 +1,10 @@
-name: "Steven"
-title: "Développeur Fullstack Spécialisé en Java/Kotlin et Angular"
-location: "Paris, France"
-experienceYears: 1
+name: Steven
+title: Développeur Fullstack Spécialisé en Java/Kotlin et Angular
+location: Paris, France
+experienceYears: 2
 skills:
-  - "Java"
-  - "Kotlin"
-  - "Angular"
-  - "SpringBoot"
-hobbies:
-  - "Conduire dans des simulateurs de course"
-  - "Piloter des avions de lignes sur simulateur"
-  - "Resoudre des Puzzle"
-  - "Découvrir le japon sa culture..."
+  - Java
+  - Kotlin
+  - Angular
+  - SpringBoot
 

@@ -1,0 +1,114 @@
+- title: STLVideo
+  context: Projet Personel
+  status: En cours
+  image: assets/images/projects/STLVideo.png
+  date: Aout 2026 - ...
+  technologies: [Angular, TypeScript, Bootstrap, Sprinboot, Rest API, Liquibase, PostgreSQL, Kotlin]
+  links:
+    - https://github.com/Setsulys/STLVideo-front
+    - https://github.com/Setsulys/STLVideo
+  description:
+    - Création d'un site internet personel, permettant aux utilisateurs de pouvoir regarder des vidéos stocké sur un serveur
+    - Ce projet a été mis en place pour etre utilisé dans un futur NAS (Serveur de stockage en réseau) personnel que je compte monter
+
+- title: Portfolio
+  context: Projet Personel
+  status: En cours
+  image: assets/images/projects/portfolio.png
+  date: Avril 2026 - ...
+  technologies: [Angular, Bootstrap, Typescript, Firebase, Github, Github Action]
+  links:
+    - https://github.com/Setsulys/My-portfolio
+  description:
+    - Portfolio contenant mes experiences, formations, projets personnels et bien d'autres choses sur moi
+
+- title: booqIn
+  context: Université Gustave Eiffel
+  status: Terminé
+  image: assets/images/projects/BooqIn.png
+  date: Octobre 2024 - Mars 2025
+  technologies: [Java, Spring Boot, SpringMVC, H2, Thymeleaf, VueJS, GitLab, JUnit, JavaScript, Bootstrap, Android, Kotlin, Maven]
+  links:
+    - https://github.com/Setsulys/BooqIn
+    - https://gitlab.com/xsyprox/booqin-haidamous
+  description:
+    - Mise en place d'une BDD (H2) pour des livres en anglais enrichi automatiquement via API publique (Google Books) et ajout manuel possible
+    - Développement du Backend en Java avec Spring Boot
+    - Création d'un client léger avec thymeleaf/SpringMVC et client lourd avec VueJS
+
+- title: UGEGreed
+  context: Université Gustave Eiffel
+  status: Terminé
+  image: assets/images/projects/UGEGreed.png
+  date: Janvier 2024 - Avril 2024
+  technologies: [Java, RFC ]
+  links:
+    - https://github.com/Setsulys/UGEGreed
+    - https://gitlab.com/Setsulys/ugegreed-debats-ly-ieng
+  description:
+    - Utilisation de librairie manipulant Git afin d'afficher des données sur un projet Git donnée.
+    - Réalisation en binôme et collaboration sur Gitlab.
+    - Création d'une API REST et gestion d'une base de données en SQL H2.
+    - Développement d'un back-end écrit en Java offrant différents services REST.
+    - Développement d'un front-end en JavaScript affichant les informations gérées par le back.
+    - Elaboration de tests unitaires avec JUnit
+
+
+- title: GitClout
+  context: Université Gustave Eiffel
+  status: Terminé
+  image: assets/images/projects/GitClout.png
+  date: Octobre 2023 - Décembre 2023
+  technologies: [Java, Spring Boot, SpringMVC, JPA, Thymeleaf, Maven, VueJs, GitLab, JavaScript, JUnit, Semantic-ui]
+  links:
+    - https://github.com/Setsulys/GitClout
+    - https://gitlab.com/Setsulys/DEBATS-LY_IENG
+  description:
+    - Utilisation de librairie manipulant Git afin d'afficher des données sur un projet Git donnée.
+    - Réalisation en binôme et collaboration sur Gitlab.
+    - Création d'une API REST et gestion d'une base de données en SQL H2.
+    - Développement d'un back-end écrit en Java offrant différents services REST.
+    - Développement d'un front-end en JavaScript affichant les informations gérées par le back.
+    - Elaboration de tests unitaires avec JUnit
+
+
+- title: The Light Corridor
+  context: Université Gustave Eiffel
+  status: Terminé
+  image: assets/images/projects/TheLightCorridor.png
+  date: Fevrier 2022 - Avril 2022
+  technologies: [C, C++, Open GL, Git]
+  links:
+    - https://github.com/Setsulys/The_Light_Corridor
+    - https://gitlab.com/Setsulys/the_light_corridor
+  description:
+    - Creation d'un jeu a l'aide de OpenGL, simulant une balle rebondisante dans un couloir,avec une raquette pour faire avancer la balle
+    - Manipulation des lumières et Shaders
+    - Manipulation des colisions entre objets
+
+- title: Roguelike
+  context: Université Gustave Eiffel
+  status: Terminé
+  image: assets/images/projects/RogueLike.png
+  date: Octobre 2021 - Décembre 2021
+  technologies: [C, Git, MVL graphic Library]
+  links:
+    - https://github.com/Setsulys/Rogue-like
+  description:
+    - Jeu roguelike, avec des étages de labyrinthes tous différents généré procéduralement, sur chaque étage se trouve des énemis et des coffres contenant des bonus, comme une armure, une epee, des potions, etc
+    - Le joueur devra donc parcourir un maximum d'étages et bien s'équiper pour pouvoir y parvenir.
+    - Génération procédurale du labyrinthe
+    - Ajout et utilisation de la librairie graphique MLV dérivé de SDL
+    - Ajout d'une procédure de sauvegarde de partie et de chargement de partie
+    - Ajout de Musique et d'easter Egg et de pseudo animations
+
+
+- title: Compilateur C
+  context: Université Gustave Eiffel
+  status: Terminé
+  date: Octobre 2021 - Avril 2022
+  image: assets/images/projects/nasm.png
+  technologies: [Nasm, Flex, Bison]
+  description:
+    - D'abord creation d'un analyseur syntaxique a l'aide de flex et bison permettant de lire si le fichier de l'utilisateur est valide ou non
+    - Avec NASM, création du compilateur

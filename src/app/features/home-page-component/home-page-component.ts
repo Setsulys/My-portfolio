@@ -3,10 +3,11 @@ import { ExperiencesComponent } from './experiences-component/experiences-compon
 import { AboutMeComponent } from './about-me-component/about-me-component'
 import { FormationsComponent } from './formations-component/formations-component'
 import { ContactComponent } from './contact-component/contact-component'
+import { ProjectsComponent } from './projects-component/projects-component'
 
 @Component({
   selector: 'app-home-page-component',
-  imports: [ExperiencesComponent, FormationsComponent, AboutMeComponent, ContactComponent],
+  imports: [ExperiencesComponent, FormationsComponent, AboutMeComponent, ContactComponent, ProjectsComponent],
   templateUrl: './home-page-component.html',
   styleUrl: './home-page-component.scss',
 })

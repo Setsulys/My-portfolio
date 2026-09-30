@@ -1,25 +1,25 @@
-- school: "Université Gustave Eiffel - Institut Gaspard Monge"
-  type: "Université"
-  image: "assets/images/IGM.png"
-  diploma: "Master en Logiciel et Ingénierie des données"
-  location: "Champs sur Marne - France"
-  date: "2018 - 2025"
+- school: Université Gustave Eiffel - Institut Gaspard Monge
+  type: Université
+  image: assets/images/formations/IGM.png
+  diploma: Master en Logiciel et Ingénierie des données
+  location: Champs sur Marne - France
+  date: 2018 - 2025
   description:
-    - "Spécialisation en architecture logicielle, bases de données avancées et ingénierie des données."
-    - "Projet de fin d'études : Conception et développement d'une application distribuée avec Angular et Spring Boot."
-    - "Algorithmique, programmation fonctionnelle et gestion de projet Agile/Scrum."
+    - Spécialisation en architecture logicielle, bases de données avancées et ingénierie des données.
+    - Projet de fin d'études : Conception et développement d'une application distribuée avec Angular et Spring Boot.
+    - Algorithmique, programmation fonctionnelle et gestion de projet Agile/Scrum.
 
-- school: "Cité Scolaire Paul Valery"
-  type: "Classes Préparatoires - PCSI"
-  image: "assets/images/PV.png"
-  location: "Paris - France"
-  date: "2017 - 2018"
-  description:
+- school: Cité Scolaire Paul Valery
+  type: Classes Préparatoires - PCSI
+  image: assets/images/formations/PV.png
+  location: Paris - France
+  date: 2017 - 2018
+  description: []
 
-- school: "Lycée Gabriel Fauré "
-  type: "Lycée"
-  image: "assets/images/GF.png"
-  location: "Paris - France"
-  date: "2015 -2017"
-  diploma: " Baccalauréat Scientifique - Spécialité SVT"
-  description:
+- school: Lycée Gabriel Fauré
+  type: Lycée
+  image: assets/images/formations/GF.png
+  location: Paris - France
+  date: 2015 -2017
+  diploma:  Baccalauréat Scientifique - Spécialité SVT
+  description: []

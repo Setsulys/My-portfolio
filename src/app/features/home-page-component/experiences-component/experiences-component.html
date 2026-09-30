@@ -10,14 +10,15 @@
 >
   @for (item of experiences; track item.title) {
   <swiper-slide>
-    <div class="experience-card">
+    <div class="rounded-5 bg-body-tertiary py-3 my-3 mx-5">
       <img
         [src]="item.image"
         alt="bootstrap"
-        class="experience-card__image"
+        class="w-auto h-auto mw-100 mh-50 d-block mt-2 my-5 px-5"
+        style="max-height: 150px; object-fit: cover;"
       />
 
-      <div class="experience-card__content">
+      <div class="mx-5">
         <h3>{{ item.title }}</h3>
         <h4>{{ item.status }}</h4>
         <h5>{{item.location}}</h5>
