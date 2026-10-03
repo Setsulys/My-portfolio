@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "steven-ly-ieng-portfolio",
     "public": "dist/my-portfolio/browser",
     "ignore": [
       "firebase.json",

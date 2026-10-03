@@ -19,4 +19,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_C28F7 }}
           projectId: portfolio-c28f7
-          site: steven-ly-ieng
+          target: steven-ly-ieng-portfolio

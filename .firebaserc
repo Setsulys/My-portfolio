@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "portfolio-c28f7"
-  }
+  },
+  "targets": {
+    "portfolio-c28f7": {
+      "hosting": {
+        "steven-ly-ieng-portfolio": [
+          "steven-ly-ieng"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
