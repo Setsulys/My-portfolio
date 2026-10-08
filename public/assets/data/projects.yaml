@@ -5,8 +5,8 @@
   date: Septembre 2026 - ...
   technologies: [Angular, TypeScript, Bootstrap, Springboot, Rest API, Liquibase, PostgreSQL, Kotlin, Firebase]
   links:
-    - https://github.com/Setsulys/AutoLog-front
-    - https://github.com/Setsulys/AutoLog
+    - https://github.com/Setsulys/Auto-Logs-front
+    - https://github.com/Setsulys/Auto-Logs
   description:
     - Site internet permettant a un utilisateur de gérer la maintenance de son véhicule, (consomation d'essence, kilometrage, prochaine révision estimé)
     - Back-end développé en architecture hexagonale, permettant au projet d'etre modulable et de pouvoir s'adapter aux changements de technologies au besoin.
