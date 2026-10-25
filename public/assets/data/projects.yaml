@@ -1,9 +1,21 @@
+- title: Dungeon Royal
+  context: Personel
+  status: En cours
+  image: assets/images/projects/Rogue-like
+  date: Octobre 2026 - ...
+  technologies: [Python]
+  links:
+    - https://github.com/Setsulys/Dungeon-Royal
+  description:
+    - Generation aleatoire de labyrinthe et ajout des elements sur la carte
+
+
 - title: AutoLog
   context: Personel
   status: En cours
   image: assets/images/projects/AutLog.png
   date: Septembre 2026 - ...
-  technologies: [Angular, TypeScript, Bootstrap, Springboot, Rest API, Liquibase, PostgreSQL, Kotlin, Firebase]
+  technologies: [Angular, TypeScript, Bootstrap, Springboot, Rest API, Liquibase, PostgreSQL, Kotlin, Firebase, SpringDoc]
   links:
     - https://github.com/Setsulys/Auto-Logs-front
     - https://github.com/Setsulys/Auto-Logs
@@ -15,7 +27,7 @@
   context: Personel
   status: En cours
   image: assets/images/projects/STLVideo.png
-  date: Aout 2026 - ...
+  date: Août 2026 - ...
   technologies: [Angular, TypeScript, Bootstrap, Springboot, Rest API, Liquibase, PostgreSQL, Kotlin, Firebase]
   links:
     - https://github.com/Setsulys/STLVideo-front
